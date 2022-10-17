@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MeanShiftWindow</class>
+ <widget class="QMainWindow" name="MeanShiftWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="Base">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_bandwidth">
+        <property name="statusTip">
+         <string>Bandwidth used in the RBF kernel.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_max_iter">
+        <property name="statusTip">
+         <string>Maximum number of iterations, per seed point before the clustering operation terminates (for that seed point)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_max_iter">
+        <property name="text">
+         <string>max_iter : int, default=300</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_bin_seeding">
+        <property name="text">
+         <string>bin_seeding : bool, default=False</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="combobox_bin_seeding">
+        <property name="statusTip">
+         <string>Setting this option to True will speed up the algorithm </string>
+        </property>
+        <item>
+         <property name="text">
+          <string>False</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>True</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_bandwidth">
+        <property name="statusTip">
+         <string>Bandwidth used in the RBF kernel.</string>
+        </property>
+        <property name="text">
+         <string>bandwidth : float, default=None</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

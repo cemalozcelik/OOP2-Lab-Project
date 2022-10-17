@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AffinityPropagationWindow</class>
+ <widget class="QMainWindow" name="AffinityPropagationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="Base">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_random_state">
+        <property name="text">
+         <string>random_state : int, default=None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_damping">
+        <property name="statusTip">
+         <string>Damping factor in the range [0.5, 1.0) is the extent to which the current value is maintained relative to incoming values (weighted 1 - damping). </string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="combobox_affinity">
+        <property name="statusTip">
+         <string>Which affinity to use.</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>euclidean</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>precomputed</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_iteration">
+        <property name="statusTip">
+         <string>Maximum number of iterations.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_iteration">
+        <property name="text">
+         <string>max_iter: int, default=200</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_damping">
+        <property name="text">
+         <string>damping: float, default=0.5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_affinity">
+        <property name="text">
+         <string>affinity , default=’euclidean’</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_random_state">
+        <property name="statusTip">
+         <string>Pseudo-random number generator to control the starting state.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DBSCANWindow</class>
+ <widget class="QMainWindow" name="DBSCANWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>129</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>590</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="Base">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_eps">
+        <property name="text">
+         <string>eps : float, default=0.5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_min_samples">
+        <property name="text">
+         <string>min_samples : int, default=5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="combobox_algorithm_d">
+        <property name="statusTip">
+         <string>Which affinity to use.</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>auto</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ball_tree</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>kd_tree</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>brute</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_eps">
+        <property name="statusTip">
+         <string>Damping factor in the range [0.5, 1.0) is the extent to which the current value is maintained relative to incoming values (weighted 1 - damping). </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_min_samples">
+        <property name="statusTip">
+         <string>Pseudo-random number generator to control the starting state.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_algorithm">
+        <property name="text">
+         <string>algorithm, default=’auto’</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

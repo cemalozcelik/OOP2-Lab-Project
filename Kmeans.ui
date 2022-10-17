@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KmeansWindow</class>
+ <widget class="QMainWindow" name="KmeansWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="Base">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_n_clusters">
+        <property name="text">
+         <string>n_clusters, int, default=8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_cluster_number">
+        <property name="statusTip">
+         <string>Enter number of clusters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_init">
+        <property name="text">
+         <string>int, default=k-means++</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="combobox_init">
+        <property name="statusTip">
+         <string>Choice the init</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>k-means++</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>random</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_iteration">
+        <property name="text">
+         <string>max_iter, int, default = 300</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_iteration">
+        <property name="statusTip">
+         <string>Enter the iteration</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_algorithm">
+        <property name="text">
+         <string>algorithm, default = lloyd</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="combobox_algorithm_k">
+        <property name="statusTip">
+         <string>Choice the algorithm</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>lloyd</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>elkan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>auto</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>full</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

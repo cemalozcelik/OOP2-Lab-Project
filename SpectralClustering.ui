@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpectralClusteringWindow</class>
+ <widget class="QMainWindow" name="SpectralClusteringWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>189</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_label">
+        <item>
+         <widget class="QLabel" name="label_n_clusters">
+          <property name="statusTip">
+           <string>Bandwidth used in the RBF kernel.</string>
+          </property>
+          <property name="text">
+           <string>n_clusters : int, default=8</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_eigen_solver">
+          <property name="text">
+           <string>eigen_solver, default=None</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_n_init">
+          <property name="text">
+           <string>n_init: int, default=10</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_n_neighbors">
+          <property name="text">
+           <string>n_neighbors: int, default=10</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_assign_labels">
+          <property name="text">
+           <string>assign_labels, default=’kmeans’</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_input">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_n_clusters">
+          <property name="statusTip">
+           <string>Bandwidth used in the RBF kernel.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_eigen_solver">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>arpack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lobpcg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>amg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_n_init">
+          <property name="statusTip">
+           <string>Maximum number of iterations, per seed point before the clustering operation terminates (for that seed point)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_n_neighbors"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_assign_labels">
+          <item>
+           <property name="text">
+            <string>kmeans</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>discretize</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cluster_qr</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
